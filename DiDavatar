@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-ID Agent</title>
+</head>
+<body>
+    <!-- Container for D-ID Agent -->
+    <div id="did-agent-container" style="width: 640px; height: 360px; margin: auto;"></div>
+    
+    <!-- D-ID Script -->
+    <script
+        type="module"
+        src="https://agent.d-id.com/v1/index.js"
+        data-name="did-agent"
+        data-mode="fabio"
+        data-client-key="Z29vZ2xlLW9hdXRoMnwxMTMzMTU4MzU4MjE1MDQ2MzAwMjc6MGxEWlN6ajVYOWtmVGZTeTBiaXpS"
+        data-agent-id="agt_Qw-EUAy5"
+        data-monitor="true">
+    </script>
+</body>
+</html>
