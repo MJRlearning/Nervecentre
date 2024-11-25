@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nervecentre Training Button</title>
+    
+    <!-- Adding a modern font -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css" rel="stylesheet">
+    
+    <style>
+        /* Page styles */
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Main container */
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        /* Button wrapper for glow effect */
+        .button-wrapper {
+            position: relative;
+            display: inline-block;
+            margin: 2rem 0;
+        }
+
+        /* Glow effect */
+        .button-glow {
+            position: absolute;
+            inset: -4px;
+            background-color: #3b82f6;
+            border-radius: 0.75rem;
+            opacity: 0.75;
+            filter: blur(8px);
+            animation: pulse 2s infinite;
+        }
+
+        /* Main button styles */
+        .animated-button {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: linear-gradient(to right, #3b82f6, #2563eb);
+            color: white;
+            font-weight: 700;
+            font-size: 1.25rem;
+            padding: 1.25rem 2.5rem;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            animation: bounce 2s infinite;
+        }
+
+        /* Button hover effects */
+        .animated-button:hover {
+            background: linear-gradient(to right, #2563eb, #1d4ed8);
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5);
+        }
+
+        /* Text styles */
+        .title {
+            color: #2563eb;
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+        }
+
+        .description {
+            color: #4b5563;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 1rem 0;
+        }
+
+        /* External link icon */
+        .external-icon {
+            width: 1.5em;
+            height: 1.5em;
+        }
+
+        /* Animations */
+        @keyframes pulse {
+            0%, 100% { opacity: 0.75; }
+            50% { opacity: 0.25; }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            .animated-button {
+                padding: 1rem 2rem;
+                font-size: 1.1rem;
+            }
+            
+            .title {
+                font-size: 1.5rem;
+            }
+            
+            .description {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Nervecentre Training</h1>
+        <p class="description">Access your training materials and resources with a single click.</p>
+        
+        <div class="button-wrapper">
+            <div class="button-glow"></div>
+            <a href="https://training.nervecentresoftware.com/" target="_blank" rel="noopener noreferrer" class="animated-button">
+                Click Here
+                <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </a>
+        </div>
+        
+        <p class="description">Click on the button to be taken to the relevant part of Nervecentre Training site.</p>
+    </div>
+</body>
+</html>
